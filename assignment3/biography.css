@@ -4,19 +4,15 @@ File: biography.css
 Date: 19 October 2025
 Simple styling for the biography page (Assignment 3 Part 1)
 */
-:root{
-    --accent:#2b6cb0;
-    --muted:#666;
-    --bg:#ffffff;
-}
+
 *{box-sizing:border-box}
-body{font-family: Arial, Helvetica, sans-serif; margin:0; background:var(--bg); color:#111}
-header{background:linear-gradient(90deg,var(--accent),#1e90ff); color:white; padding:32px 20px; text-align:center}
+body{font-family: Arial, Helvetica, sans-serif; margin:0; background:#ffffff; color:#111}
+header{background:linear-gradient(90deg,#2b6cb0,#1e90ff); color:white; padding:32px 20px; text-align:center}
 header h1{margin:0; font-size:2rem}
 header .tagline{margin:6px 0 0; opacity:0.95}
 main{padding:24px; max-width:900px; margin:0 auto}
 section{margin-bottom:20px}
-section h2{color:var(--accent); margin-bottom:8px}
+section h2{color:#2b6cb0; margin-bottom:8px}
 .skills ul{list-style:disc; padding-left:20px}
-footer{padding:16px; text-align:center; color:var(--muted); font-size:0.9rem; border-top:1px solid #eee}
-a{color:var(--accent)}
+footer{padding:16px; text-align:center; color:#666; font-size:0.9rem; border-top:1px solid #eee}
+a{color:#2b6cb0}
