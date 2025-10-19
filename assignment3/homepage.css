@@ -1,0 +1,20 @@
+/*
+Name: Rayeed Wadud
+File: homepage.css
+Date: 19 October 2025
+Typesetting styles for the homepage (Assignment 3 Part 2)
+*/
+*{box-sizing:border-box}
+body{font-family: Georgia, 'Times New Roman', serif; margin:0; color:#222; line-height:1.6}
+.site-header{background:#f3f4f6; padding:32px 20px; text-align:center}
+.site-header h1{margin:0; font-size:2rem; letter-spacing:0.5px}
+.lead{color:#555; margin-top:6px}
+.container{display:grid; grid-template-columns:2fr 1fr; gap:24px; max-width:1000px; margin:24px auto; padding:0 20px}
+.post h2{font-family: 'Helvetica Neue', Arial, sans-serif; font-weight:700; margin-top:0}
+.post p{max-width:60ch} /* readable line length */
+.sidebar{background:#fff; border-left:4px solid #e5e7eb; padding:12px}
+.site-footer{text-align:center; padding:16px; color:#666; border-top:1px solid #eee}
+a{color:#1e90ff}
+@media (max-width:700px){
+    .container{grid-template-columns:1fr}
+}
