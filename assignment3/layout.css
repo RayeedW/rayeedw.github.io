@@ -1,22 +1,74 @@
-/*
-Name: Rayeed Wadud
-Course: INFT1206
-File: layout.css
-Date: 19 October 2025
-Layout styles demonstrating CSS Grid and responsive behavior (Assignment 3 Part 3)
-*/
-*{box-sizing:border-box}
-body{font-family: Arial, sans-serif; margin:0; color:#222}
-.topbar{background:#111829; color:white; padding:20px; text-align:center}
-.main-nav ul{list-style:none; margin:0; padding:8px 16px; display:flex; gap:12px; background:#f7fafc}
-.main-nav a{text-decoration:none; color:#111}
-.page{display:grid; grid-template-columns:220px 1fr 220px; gap:16px;}
-.sidebar-left, .sidebar-right{background:#f3f4f6; padding:12px}
-.content{background:#fff; padding:16px}
-.site-footer{text-align:center; padding:12px; color:#666; border-top:1px solid #eee}
-@media (max-width:900px){
-    .page{grid-template-columns:1fr; grid-auto-rows:min-content}
-    .sidebar-right{order:3}
-    .sidebar-left{order:1}
-    .content{order:2}
+/* Improved layout responsiveness and alignment */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+article img {
+  float: left;
+  width: 200px;
+  margin: 0 15px 10px 0;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  padding: 20px;
+}
+
+.photos img {
+  width: 100%;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+@media (max-width: 700px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  article img {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+  }
 }
