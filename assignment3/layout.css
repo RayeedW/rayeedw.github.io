@@ -50,6 +50,12 @@ article img {
   padding: 20px;
 }
 
+.photos h2 {
+  text-align: center;
+  color: purple;
+  margin-bottom: 10px;
+}
+
 .photos img {
   width: 100%;
 }
